@@ -1,0 +1,1042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>calculator.png</normaloff>calculator.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(140, 144, 130);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="screen">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>391</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#screen{
+color: rgb(0, 0, 0);
+background-color: rgb(230, 230, 230);
+font-size:50px;
+border-radius:30px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>530</y>
+      <width>130</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Made By - Abhishek</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushSqrt">
+    <property name="geometry">
+     <rect>
+      <x>129</x>
+      <y>110</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushSqrt{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushSqrt:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>√x</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushDel">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>110</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushDel{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushDel:hover
+{
+border:3px solid White;
+	background-color: rgb(243, 63, 90);
+color:White;
+}</string>
+    </property>
+    <property name="text">
+     <string>DEL</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushC">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>110</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushC{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushC:hover
+{
+border:3px solid White;
+	background-color: rgb(65, 68, 220);
+color:White;
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+    <property name="shortcut">
+     <string>Del</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushPercent">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushPercent{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushPercent:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+    <property name="shortcut">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushByX">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushByX{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushByX:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>1/X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushSquare">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>170</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushSquare{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushSquare:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>x²</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushPower">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>170</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushPower{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushPower:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>^</string>
+    </property>
+    <property name="shortcut">
+     <string>^</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushDivide">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>170</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushDivide{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushDivide:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>÷</string>
+    </property>
+    <property name="shortcut">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushMultiply">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>230</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushMultiply{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushMultiply:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+    <property name="shortcut">
+     <string>*</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push9">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>230</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push9{
+border:0px;
+background: #fff;
+}
+#push9:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+    <property name="shortcut">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push8">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>230</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push8{
+border:0px;
+background: #fff;
+}
+#push8:hover
+{border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+    <property name="shortcut">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push7{
+border:0px;
+background: #fff;
+}
+#push7:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+    <property name="shortcut">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push4{
+border:0px;
+background: #fff;
+}
+#push4:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+    <property name="shortcut">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push5">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>290</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push5{
+border:0px;
+background:#fff;
+}
+#push5:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="shortcut">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushMinus">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>290</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushMinus{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushMinus:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+    <property name="shortcut">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push6">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>290</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push6{
+border:0px;
+background:#fff;
+}
+#push6:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+    <property name="shortcut">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>350</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push1{
+border:0px;
+background:#fff;
+}
+#push1:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="shortcut">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushPlus">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>350</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushPlus{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushPlus:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+    <property name="shortcut">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push2">
+    <property name="geometry">
+     <rect>
+      <x>128</x>
+      <y>350</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push2{
+border:0px;
+background: #fff;
+}
+#push2:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+    <property name="shortcut">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>350</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push3{
+border:0px;
+background: #fff;
+}
+#push3:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="shortcut">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushPandM">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>410</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushPandM{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushPandM:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>+ / -</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push0">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>410</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#push0{
+border:0px;
+background: #fff;
+}
+#push0:hover
+{
+border:3px solid #fff;
+background:#c0c0c0;
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="shortcut">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushPoint">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>410</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushPoint{
+border:0px;
+background: rgb(238, 238, 238);
+}
+#pushPoint:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+    <property name="shortcut">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushEqual">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>410</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushEqual{
+border:0px;
+	background-color: rgb(149, 255, 137);
+}
+#pushEqual:hover
+{
+border:3px solid White;
+	background-color: rgb(112, 219, 112);
+color:White;
+}</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+    <property name="shortcut">
+     <string>Enter</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushMp">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>470</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushMp{
+border:0px;
+background-color: rgb(183, 186, 165);}
+#pushMp:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>M+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushMR">
+    <property name="geometry">
+     <rect>
+      <x>231</x>
+      <y>470</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushMR{
+border:0px;
+background-color: rgb(183, 186, 165);}
+#pushMR:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>MR</string>
+    </property>
+    <property name="shortcut">
+     <string>^</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushMm">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>470</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushMm{
+border:0px;
+background-color: rgb(183, 186, 165);}
+#pushMm:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>M-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushMC">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>470</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#pushMC{
+border:0px;
+background-color: rgb(183, 186, 165);}
+#pushMC:hover
+{
+border:3px solid grey;
+	background-color: rgb(172, 172, 172);
+color:black;
+}</string>
+    </property>
+    <property name="text">
+     <string>MC</string>
+    </property>
+    <property name="shortcut">
+     <string>/</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
